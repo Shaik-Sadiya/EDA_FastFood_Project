@@ -9,8 +9,8 @@ This project performs Exploratory Data Analysis (EDA) on a fast-food menu datase
 - Data Cleaning
 - Descriptive Statistics
 - Nutritional Analysis
-- Visualization
-- Recommendations
+- Data Visualization
+- Business Recommendations
 
 ## Technologies Used
 
@@ -20,6 +20,11 @@ This project performs Exploratory Data Analysis (EDA) on a fast-food menu datase
 - Matplotlib
 - Seaborn
 - Jupyter Notebook
+- VS Code
+
+## Dataset
+
+The dataset contains nutritional information for fast-food menu items, including calories, protein, fat, carbohydrates, sodium, sugar, cholesterol, vitamins, and minerals.
 
 ## Project Structure
 
@@ -27,20 +32,47 @@ This project performs Exploratory Data Analysis (EDA) on a fast-food menu datase
 EDA_FastFood_Project/
 │
 ├── data/
+│   └── menu.csv
+│
 ├── notebooks/
+│   └── eda_analysis.ipynb
+│
 ├── reports/
+│   ├── charts/
+│   └── insights.md
+│
 ├── src/
+│   ├── load_data.py
+│   ├── cleaning.py
+│   ├── analysis.py
+│   └── visualization.py
+│
 ├── requirements.txt
 └── README.md
 ```
 
 ## Visualizations
 
-1. Calories Distribution
-2. Average Calories by Category
-3. Protein vs Calories
-4. Correlation Heatmap
+- Calories Distribution
+- Average Calories by Category
+- Protein vs Calories
+- Correlation Heatmap
+
+## Key Findings
+
+- Some menu items contain significantly higher calories than others.
+- Calories are positively correlated with fat content.
+- Certain categories have much higher average sodium levels.
+- High-protein items generally contain more calories.
+- Nutritional values vary greatly across menu categories.
+
+## Recommendations
+
+- Promote healthier and low-calorie menu options.
+- Reduce sodium levels in high-sodium products.
+- Highlight high-protein nutritious meals.
+- Display nutritional information clearly for customers.
 
 ## Outcome
 
-The project provides nutritional insights and recommendations based on menu data.
+This project demonstrates the complete Exploratory Data Analysis (EDA) workflow, including data loading, cleaning, statistical analysis, visualization, and business insights using Python.
