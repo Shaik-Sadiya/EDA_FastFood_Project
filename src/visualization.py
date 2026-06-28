@@ -3,15 +3,15 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import os
 
-# Create charts folder
+
 os.makedirs("reports/charts", exist_ok=True)
 
-# Load dataset
+
 df = pd.read_csv("data/menu.csv")
 
-# ------------------------------------------------
-# 1. Calories Distribution
-# ------------------------------------------------
+
+# 1.Calories Distribution
+
 
 plt.figure(figsize=(8,5))
 sns.histplot(df["Calories"], bins=20)
@@ -26,9 +26,9 @@ plt.savefig(
 
 plt.close()
 
-# ------------------------------------------------
+
 # 2. Category Calories
-# ------------------------------------------------
+
 
 category_calories = (
     df.groupby("Category")["Calories"]
@@ -51,9 +51,9 @@ plt.savefig(
 
 plt.close()
 
-# ------------------------------------------------
+
 # 3. Protein vs Calories
-# ------------------------------------------------
+
 
 plt.figure(figsize=(8,5))
 
@@ -71,9 +71,9 @@ plt.savefig(
 
 plt.close()
 
-# ------------------------------------------------
+
 # 4. Heatmap
-# ------------------------------------------------
+
 
 numeric_df = df.select_dtypes(include="number")
 
